@@ -4,8 +4,8 @@ Track COVID-19 vaccinations and manufactures used around the world using extract
 
 ## Contributers
 
-<strong>Hana Tafesse</strong>
-<strong>Tanisha Cooper</strong>
+- <strong>Hana Tafesse</strong>
+- <strong>Tanisha Cooper</strong>
 
 ## Background:
 
