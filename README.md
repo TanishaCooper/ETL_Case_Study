@@ -1,11 +1,15 @@
-# ETL_Case_Study
+# World COVID-19 Vaccinations ETL_Case_Study
 
 Track COVID-19 vaccinations around the world using extract, transform, and load functionality.
 
 
 ## Background:
 
- The momentum of the Covid-19 pandemic has tapered. There has been a push for people to get vaccinated prior to returning to high-risk jobs, visiting countries, and vacationing. We wanted to understand Covid-19 vaccination around the world. According to each country's population, are people fully vaccinated? Which country has the highest fully vaccinated population per one hundred? What vaccination manufacturers are being used? Here we take a look at an analysis of COVID-19 vaccinations per country and the manufacturers they use.
+The momentum of the Covid-19 pandemic has tapered. There has been a push for people to get vaccinated prior to returning to high-risk jobs, visiting countries, and vacationing. 
+
+We wanted to understand Covid-19 vaccination around the world. According to each country's population, are people fully vaccinated? Which country has the highest fully vaccinated population per one hundred? What vaccination manufacturers are being used? Here we take a look at an analysis of COVID-19 vaccinations per country and the manufacturers they use.
+
+We collected data from [COVID-19 World Vaccination Progress](https://www.kaggle.com/datasets/gpreda/covid-world-vaccination-progress "COVID-19 World Vaccination Progress") and [COVID-19 Ranking of Vaccinations and Manufactuers Used](https://www.kaggle.com/code/raulalmuzara/covid-19-ranking-of-vaccinations-and-vaccines-used "COVID-19 Ranking of Vaccinations and Manufactuers Used")
 
 
 ## Data Analysis:
