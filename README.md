@@ -2,6 +2,10 @@
 
 Track COVID-19 vaccinations and manufactures used around the world using extract, transform, and load functionality.
 
+## Contributers
+
+<strong>Hana Tafesse</strong>
+<strong>Tanisha Cooper</strong>
 
 ## Background:
 
