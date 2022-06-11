@@ -1,0 +1,27 @@
+# Create table (country_vaccinations) and load dataframe data
+
+country_vaccination_df.to_sql(name='country_vaccinations', 
+                              con=engine, if_exists='append', index=False)
+
+# Confirm data has been added by querying the 'country_vaccinations' table
+
+pd.read_sql_query('select * from country_vaccinations', con=engine).head()
+
+# Create table (country_manufactuer) and load dataframe data 
+
+country_vacc_manu_transformed.to_sql(name='country_manufacturer', con=engine, if_exists='append', index=False)
+
+pd.read_sql_query('select * from country_manufacturer', con=engine).head()
+
+# Join Tables to answer analysis question 4
+
+united_states_manufacturers_df = pd.read_sql_query("SELECT country_manufacturer.id, country_manufacturer.country, \
+country_manufacturer.manufacturer, country_vaccinations.people_fully_vaccinated, \
+country_manufacturer.total_vaccinations FROM country_vaccinations FULL JOIN country_manufacturer \
+ON country_vaccinations.country = country_manufacturer.country \
+WHERE country_manufacturer.country = 'United States' \
+ORDER BY country_manufacturer.total_vaccinations DESC", con=engine)
+
+united_states_manufacturers_df
+
+united_states_manufacturers_df.dfi.export("../ETL_Case_Study/Images/united_states_manufacturers_df.png")

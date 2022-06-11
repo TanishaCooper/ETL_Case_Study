@@ -1,0 +1,38 @@
+Analys 1:
+
+SELECT id, country, people_fully_vaccinated 
+FROM country_vaccinations
+ORDER BY people_fully_vaccinated DESC;
+
+SELECT country, people_fully_vaccinated
+FROM country_vaccinations
+ORDER BY people_fully_vaccinated ASC;
+
+Analysis 2:
+
+SELECT country, manufacturer, people_fully_vaccinated 
+FROM country_vaccinations 
+WHERE country = 'Pitcairn' OR country = 'Tokelau' OR country='Niue' OR country='Falkland Islands' OR country= 'Montserrat' 
+ORDER BY people_fully_vaccinated;
+
+SELECT country, manufacturer, people_fully_vaccinated
+FROM country_vaccinations
+WHERE country = 'Indonesia' OR country = 'China' OR country='India' OR country='United States' OR country= 'Brazil'
+ORDER BY people_fully_vaccinated DESC;
+
+Analysis 3: 
+
+SELECT country, people_fully_vaccinated_per_hundred 
+FROM country_vaccinations WHERE country = 'Pitcairn' OR country = 'Tokelau' OR country='Niue' 
+OR country='Falkland Islands' OR country='Montserrat' OR country = 'China' OR country = 'India' 
+OR country='United States' OR country='Brazil' OR country='Indonesia'
+ORDER BY people_fully_vaccinated_per_hundred DESC;
+
+Analysis 4:
+
+SELECT country_manufacturer.id, country_manufacturer.country,
+country_manufacturer.manufacturer, country_vaccinations.people_fully_vaccinated,
+country_manufacturer.total_vaccinations FROM country_vaccinations FULL JOIN country_manufacturer
+ON country_vaccinations.country = country_manufacturer.country 
+WHERE country_manufacturer.country = 'United States' 
+ORDER BY country_manufacturer.total_vaccinations DESC;
