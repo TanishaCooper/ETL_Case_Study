@@ -104,9 +104,11 @@ Using csv files - we determine the layout of the tables and columns we wanted to
     - Read CSV files using Pandas
     - Reviewed both dataframes to validate the data we needed according to our tentative outline above
 
-## Transform:
+# Transform:
 
-### country_vaccinations dataset
+## Data Wrangling
+
+### <strong>country_vaccinations dataset</strong>
 
 - #### Created a filtered dataframe to indicate specific columns
 - #### Converted index column (used as primary key later) and rename the column headers
@@ -115,32 +117,39 @@ Using csv files - we determine the layout of the tables and columns we wanted to
 - #### Iterated over each country to collect in ***for loop*** the latest values for columns to place in dataframe
 - #### Created dataframe where each country can be associated to a desired value 
 
-![country_vaccination_df](/Images/country_vaccination_df)
+![country_vaccination_df](/Images/country_vaccination_df.png)
 
-### country_manufacturer dataset
+### <strong>country_manufacturer dataset</strong>
 
-  - Tools used
+- #### Cleaned multiple dates from csv file prior to upload (most challenging was to use a for loop using Pandas)
+- #### Created a filtered dataframe to indicate specific columns
+- #### Converted index column (used as primary key later) and rename the column headers
+- #### Dropped rows with NaN values
+
+![country_manufacturer dataset](/Images/country_vacc_manu_transformed.png)
+
+  ### Tools Used in Data Transformation
+
   1. Python
   2. Pandas
   3. Numpy
   4. DataFrame_Image
   5. Jupyter Notebook
 
-## Data wrangling performed
+# Load:
 
-  1. Data cleaning
-  2. Define arrays to store countries and desired values 
-  3. Data iteration (for loop)
-  4. Pandas - DataFrame
-      A. Ensure to rename columns to fit created database above
-  5. Data filtering
-  6. Summarization
-  7. Aggregating
-  8. Set index
+ - Created a connection to postgreSQL (pgAdmin 4)
+ - Created table (country_vaccinations) and load dataframe data
+ - Confirmed data has been added by querying the 'country_vaccinations' table
 
-## Load:
+ - Created table (country_manufactuer) and load dataframe data
+ - Confirmed data has been added by querying the 'country_manufactuer' table 
 
- - Create a connection to the database in jupyter notebook to pgAdmin 4
- - Append data frames to tables
- - Confirm successful load by querying the database
-     . Join the two tables on country
+ - Joined tables to answer analysis question 4
+
+
+## Files 
+
+[Load Queries File](/Files/load_data_queries.txt "Load Queries")
+
+[SQL Queries for Analysis](/Files/sql_queries.txt "postgreSQL Queries")
