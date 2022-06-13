@@ -49,7 +49,7 @@ Bottom 5 Countries Most Fully COVID-19 Vaccinated People
 <strong>***Analysis:***</strong> 
 > *[Top 5 Country Manufacturers](http://localhost:8889/view/Images/top_manufactures_df.png "Top 5 Country Manufacturers")*
 >>
-> *[Bottom 5 Country Manufacturers](http://localhost:8889/view/Images/bottom_manufactures_df.png "Bottom 5 Country Manufacturers")*
+> *[Bottom 5 Country Manufacturers](https://github.com/TanishaCooper/ETL_Case_Study/blob/None/Images/bottom_manufactures_df.png "Bottom 5 Country Manufacturers")*
 
 
 <strong>Based on population (fully vaccinated per 100), what percent of people are fully vaccinated in Top/Bottom 5 Countries? Help to debunk that countries with larger populations have a higher chance to have “more” vaccinated people than countries with a smaller population.</strong>
